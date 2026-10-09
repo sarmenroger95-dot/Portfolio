@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Roger Sarmen Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <h1>Roger Sarmen Portfolio</h1>
+    <p>Web System and Technology 2</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="myproject.html">My Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h2>Contact Me</h2>
+    <form id="contact-form" novalidate>
+      <p>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required>
+        <span id="name-error" class="error" role="alert"></span>
+      </p>
+      <p>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" required>
+        <span id="email-error" class="error" role="alert"></span>
+      </p>
+      <p>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5" aria-describedby="message-error" required></textarea>
+        <span id="message-error" class="error" role="alert"></span>
+      </p>
+      <button type="submit">Send Message</button>
+      <p id="form-status" role="status"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Roger Sarmen</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
